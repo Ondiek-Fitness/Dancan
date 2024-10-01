@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile | Medilop</title>
+    <link rel="stylesheet" href="Magic .css">
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const userName = localStorage.getItem('userName');
+            if (userName) {
+                document.getElementById('welcome-message').innerText = `Welcome, ${userName}!`;
+            } else {
+                window.location.href = 'login.html'; 
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Medilop</div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile-section">
+        <div class="profile-container">
+            <h1 id="welcome-message">Welcome to Your Profile</h1>
+            <p>Here you can view and update your profile details.</p>
+            <button onclick="logout()">Log Out</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Medilop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        function logout() {
+            localStorage.removeItem('userName');
+            window.location.href = 'login.html'; 
+        }
+    </script>
+</body>
+</html>

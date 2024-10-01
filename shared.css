@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.menu a.active {
+    color: #000;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth-buttons .sign-up {
+    background-color: #333;
+    color: white;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-section {
+    max-width: 500px;
+}
+
+.text-section p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.text-section button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.text-section .play-video {
+    background-color: #aaa;
+}
+
+.image-section img {
+    width: 400px;
+    height: auto;
+    background-color: #ccc;
+}
+
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.stat {
+    flex: 1;
+    padding: 20px;
+    border-left: 1px solid #444;
+}
+
+.stat:first-child {
+    border-left: none;
+}
+
+
+.services {
+    padding: 50px;
+    text-align: center;
+}
+
+.services h1, .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #eee;
+    padding: 20px;
+    flex-basis: 18%;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.service-item:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+
+.about {
+    padding: auto;
+}
